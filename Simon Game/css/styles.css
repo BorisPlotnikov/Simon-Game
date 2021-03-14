@@ -1,0 +1,174 @@
+
+html {
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  background-color: #011F3F;
+  height: 100%;
+}
+
+
+#level-title, #reload-message, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Stick', sans-serif;
+  color: #FEF2BF;
+}
+
+#level-title {
+  font-size: 4rem;
+  margin: 5% auto 0;
+}
+
+#rules-title {
+  font-size: 3rem;
+  margin-top: -0.6rem;
+  margin-bottom: 3rem;
+}
+
+#rules-text {
+  line-height: 3rem;
+  font-size: 1.8rem;
+  margin: 0 0 -0.5rem;
+}
+
+
+#reload-message {
+  font-size: 3rem;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+
+#game-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 1000px;
+  margin: 10% auto;
+  border: 1px solid yellow;
+}
+
+
+#text-container {
+  position: absolute;
+  padding: 0 3%;
+  border: 1px solid lightblue;
+}
+
+.btn {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  margin: 25px;
+  border: 10px solid black;
+  opacity: 0.1;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+/* @media Breakpoint */
+/*
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV
+1201px+
+601px-1200px
+320px-600px
+*/
+
+/* Tablet */
+@media screen and (max-width: 1200px) {
+
+  .btn {
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+    border: 6px solid black;
+  }
+
+  #level-title {
+    font-size: 2.5rem;
+    margin-top: 10%;
+  }
+
+  #reload-message {
+    font-size: 1.5rem;
+  }
+
+  #game-wrap {
+    width: 500px;
+    margin-top: 15%;
+  }
+
+  #rules-title {
+    font-size: 2rem;
+  }
+
+  #rules-text {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    margin: 0 0 -0.2rem;
+  }
+
+
+}
+
+/* phone */
+@media screen and (max-width: 600px) {
+
+
+  .btn {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border: 3px solid black;
+  }
+
+  #level-title {
+    font-size: 1.5rem;
+    margin-top: 5%;
+  }
+
+  #reload-message {
+    font-size: 1rem;
+  }
+
+  #game-wrap {
+    width: 300px;
+    margin-top: 5%;
+  }
+
+  #rules-title {
+    font-size: 1rem;
+    margin-top: -0.4rem;
+    margin-bottom: 1rem;
+  }
+
+  #rules-text {
+    line-height: 1rem;
+    font-size: 0.8rem;
+    margin: 0 0 -0.1rem;
+  }
+
+}
