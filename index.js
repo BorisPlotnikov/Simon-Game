@@ -111,7 +111,7 @@ rules();
 
     // Start
 
-    $(document).keypress(function() {
+    $(document).click(function() {
 
       $("#text-container").stop().fadeOut("slow");
       $(".btn").fadeTo(1000, 1);
