@@ -1,4 +1,5 @@
-//                           Function Compomenent
+//                           Components
+
 // Opening Info
 
 function rules() {
@@ -8,25 +9,25 @@ function rules() {
   if (innerWidth <= 480) {
 
     $("#text-container").animate({
-      top: "-46%"
+      top: "-65%"
     }, 18000, rules);
 
   } else if (innerWidth <= 768) {
 
     $("#text-container").animate({
-      top: "-46%"
+      top: "-51%"
     }, 18000, rules);
 
   } else if (innerWidth <= 1280) {
 
     $("#text-container").animate({
-      top: "-69%"
+      top: "-55%"
     }, 18000, rules);
 
   } else {
 
     $("#text-container").animate({
-      top: "-59%"
+      top: "-52%"
     }, 18000, rules);
 
   }
@@ -85,11 +86,7 @@ rules();
 
     function activateAnimation(buttonColor) {
 
-      $("#" + buttonColor).animate({
-        opacity: 0.1
-      }, 200).animate({
-        opacity: 1
-      }, 0);
+      $("#" + buttonColor).fadeOut(100).fadeIn(100);
 
     }
 
@@ -111,7 +108,21 @@ rules();
 
     // Start
 
-    $(document).click(function() {
+    // $(document).click(function() {
+    //
+    //   $("#text-container").stop().fadeOut("slow");
+    //   $(".btn").fadeTo(1000, 1);
+    //
+    //   if (!started) {
+    //
+    //     setTimeout(computerChosingColor, 1000);
+    //     started = true;
+    //
+    //   }
+    //
+    // });
+
+    $(document).on("click keypress touchstart", function() {
 
       $("#text-container").stop().fadeOut("slow");
       $(".btn").fadeTo(1000, 1);
