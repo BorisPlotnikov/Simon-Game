@@ -1,14 +1,7 @@
-
-html {
-  height: 100%;
-}
-
 body {
   text-align: center;
   background-color: #011F3F;
-  height: 100%;
 }
-
 
 #level-title, #reload-message, h1, h2, h3, h4, h5, h6 {
   font-family: 'Stick', sans-serif;
@@ -83,19 +76,36 @@ body {
   background-color: #cdc733;
 }
 
+@keyframes press {
+  0% {background-color: white; box-shadow: 0 0 20px white;}
+}
 
+@keyframes pop {
+  25% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.press {
+  animation-name: press;
+  animation-duration: 0.2s;
+}
+.pop {
+  animation-name: pop;
+  animation-duration: 0.2s;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
 
 /* Device width breakpoints reference
 320px — 480px: Phone
 481px — 768px: Tablets
 769px — 1200px: Laptops
 1201px and more Desktops */
-
-
-
 /* Laptops */
 @media screen and (max-width: 1200px) {
-
   .btn {
     height: 150px;
     width: 150px;
@@ -127,14 +137,10 @@ body {
   #reload-message {
     font-size: 2.5rem;
   }
-
 }
-
-
 
 /* Tablets */
 @media screen and (max-width: 768px) {
-
   .btn {
     height: 150px;
     width: 150px;
@@ -166,14 +172,10 @@ body {
   #reload-message {
     font-size: 2rem;
   }
-
 }
-
-
 
 /* Phones */
 @media screen and (max-width: 480px) {
-
   .btn {
     height: 130px;
     width: 130px;
@@ -199,5 +201,4 @@ body {
   #reload-message {
     font-size: 1.5rem;
   }
-
 }
